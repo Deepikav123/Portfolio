@@ -1,0 +1,296 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #f1f5f9;
+}
+
+.navbar {
+    background-color: #1e293b;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leftNavbar {
+
+    font-weight: bold;
+    font-size: x-large;
+
+}
+
+.name {
+    color: white;
+    cursor: pointer;
+
+}
+
+.rightNavbar {
+    display: flex;
+    gap: 14px;
+}
+
+.rightNav {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0px 10px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.rightNav:hover {
+    text-decoration: underline;
+    font-size: larger;
+
+}
+
+/* Hero Section */
+
+.hero {
+
+    display: flex;
+}
+
+.left {
+    margin-top: 130px;
+    margin-left: 50px;
+}
+
+.right {
+    margin: 70px 50px;
+    /* margin-top: 70px; */
+}
+
+.profile {
+    height: 320px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 300px;
+    box-shadow: 0px 0px 3px #1e293b;
+    padding: 10px;
+}
+
+.greetings {
+    font-weight: bolder;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.position {
+    /* font-weight: bold; */
+    font-size: 20px;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: large;
+    background-color: #1e293b;
+    border: none;
+    color: white;
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 3px #1e293b;
+    cursor: pointer;
+}
+
+.logo {
+    height: 50px;
+    width: 50xp;
+    border: 2px solid #1e293b;
+    border-radius: 40px;
+    /* padding: 6px; */
+}
+
+.logo:hover {
+    box-shadow: 3px 3px 5px #1e293b;
+}
+
+.logos {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+
+/* About section */
+
+.aboutSection {
+    border: 2px solid black;
+    height: 500px;
+    width: 100%;
+    margin-top: 60px;
+
+}
+
+.aboutData {
+    margin: 50px 50px;
+    display: flex;
+    gap: 30px;
+}
+
+.aboutHeading {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.aboutDetails {
+    padding: 10px;
+    margin-top: 20px;
+
+    font-size: 20px;
+}
+
+.detail1 {
+    margin-bottom: 20px;
+}
+
+.introduction {
+    width: 50vw;
+}
+
+.information {
+    /* height: 300px; */
+    width: 25vw;
+    box-shadow: 0px 0px 5px #1e293b;
+    border-radius: 20px;
+    margin-left: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.educationHeading,
+.focusHeading,
+.coreSkillsHeading,
+.goalHeading,
+.locationHeading {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.information:hover {
+    transform: translateY(-8px);
+}
+
+
+
+
+
+
+/* Project Section */
+.projectSection {
+    border: 2px solid black;
+    height: 500px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.ProjectsHeading {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.projectCards {
+
+    height: 400px;
+    margin: 25px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.projectCard {
+    /* border: 1px solid  ; */
+    box-shadow: 2px 2px 5px #1e293b;
+    height: 300px;
+    margin: 20px 35px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.projectCard:hover {
+    transform: translateY(-8px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Project Card */
+.projectTitle {
+    margin: 20px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.projectDescription {
+    font-size: medium;
+    margin-bottom: 10px;
+}
+
+.projectTech {
+    font-size: medium;
+    margin-bottom: 10px;
+
+}
+
+.tech {
+    font-weight: bold;
+}
+
+.projectButtons {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.git,
+.demo {
+
+    text-decoration: none;
+    color: white;
+}
+
+.projectGitHub,
+.projectDemo {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1e293b;
+}
+
+.projectGitHub:hover,
+.projectDemo:hover {
+    box-shadow: 3px 3px 3px #131924;
+
+}
