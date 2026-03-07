@@ -8,6 +8,11 @@ body {
     background-color: #f1f5f9;
 }
 
+
+
+
+
+
 .navbar {
     background-color: #1e293b;
     height: 70px;
@@ -36,6 +41,10 @@ body {
     gap: 14px;
 }
 
+.rightNavlinks {
+    display: flex;
+}
+
 .rightNav {
     color: white;
     cursor: pointer;
@@ -49,6 +58,16 @@ body {
     text-decoration: underline;
     font-size: larger;
 
+}
+
+.hamburgerIcon {
+    height: 30px;
+    width: 30px;
+    display: none;
+}
+
+.closeIcon {
+    display: none;
 }
 
 /* Hero Section */
@@ -82,10 +101,13 @@ body {
     font-size: 60px;
     margin-bottom: 20px;
 }
-.viewButton,.downloadButton{
+
+.viewButton,
+.downloadButton {
     text-decoration: none;
     color: white;
 }
+
 .position {
     /* font-weight: bold; */
     font-size: 20px;
@@ -131,11 +153,41 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small mobile */
+@media (max-width: 480px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* About section */
 
 .aboutSection {
- padding-top: 20px;
-    height: 500px;
+    padding-top: 20px;
+    /* height: 500px; */
     width: 100%;
     margin-top: 60px;
 
@@ -194,10 +246,17 @@ body {
     transform: translateY(-8px);
 }
 
+
+
+
+
+
+
+
+
 /* Skill Section */
 .skillsSection {
-padding-top: 20px;
-    height: 500px;
+    padding-top: 20px;
     width: 100%;
     margin-top: 100px;
 }
@@ -210,7 +269,7 @@ padding-top: 20px;
 }
 
 .skillCards {
-    height: 250px;
+
     margin: 40px 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -243,10 +302,18 @@ padding-top: 20px;
 }
 
 
+
+
+
+
+
+
+
+
+
 /* Project Section */
 .projectSection {
-padding-top: 20px;
-    height: 500px;
+    padding-top: 20px;
     width: 100%;
     margin-top: 100px;
 }
@@ -255,7 +322,7 @@ padding-top: 20px;
     display: flex;
     justify-content: center;
     font-weight: bolder;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .projectTitleHeading {
@@ -264,8 +331,6 @@ padding-top: 20px;
 }
 
 .projectCards {
-
-    height: 400px;
     margin: 40px 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -274,7 +339,6 @@ padding-top: 20px;
 .projectCard {
     /* border: 1px solid  ; */
     box-shadow: 2px 2px 5px #1e293b;
-    height: 300px;
     margin: 20px 35px;
     border-radius: 10px;
     padding: 10px;
@@ -341,10 +405,146 @@ padding-top: 20px;
 
 }
 
+
+
+
+/* Responsivesness */
+
+/* Mobile */
+@media (max-width: 768px) {
+    body {
+        /* background-color: pink; */
+    }
+
+    .rightNavlinks {
+        display: none;
+        flex-direction: column;
+    }
+
+    .hamburgerIcon {
+        display: initial;
+    }
+
+    .hero {
+        margin: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right {
+        margin: 30px 20px;
+        /* margin-top: 70px; */
+    }
+
+    .profile {
+        height: 220px;
+        width: 200px;
+    }
+
+    .left {
+
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        padding: 8px;
+    }
+
+    .greetings {
+        font-weight: bolder;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+
+        padding: 10px 15px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: medium;
+        background-color: #1e293b;
+        border: none;
+        color: white;
+
+    }
+
+    .position {
+        text-align: center;
+    }
+
+    /* About section  */
+    .aboutHeading {
+        font-size: x-large;
+    }
+
+    .introduction {
+        width: auto;
+    }
+
+    .aboutData {
+
+        margin: 30px 30px;
+        display: flex;
+        gap: 30px;
+
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutDetails {
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .info {
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .information {
+        width: auto;
+        margin-left: 0px;
+    }
+
+
+    /* Skill Section */
+    .skillCards {
+        /* height: 250px; */
+        margin: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .skillCard {
+
+
+        margin: 20px 20px;
+
+        padding: 10px;
+    }
+
+
+    /* Project Section */
+    .projectCards {
+
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+
+}
+
+
+
+
+
 /* Contact Section */
 .contactSection {
-padding-top: 20px;
-    height: 500px;
+    padding-top: 20px;
+
     width: 100%;
     margin-top: 100px;
 }
@@ -371,7 +571,7 @@ padding-top: 20px;
 }
 
 .card {
-   border-radius: 10px;
+    border-radius: 10px;
     box-shadow: 0px 0px 5px #1e293b;
     margin: 40px;
     padding: 40px;
@@ -393,19 +593,8 @@ padding-top: 20px;
     height: 25px;
     width: 25px;
 }
-.link{
+
+.link {
     text-decoration: none;
     color: black;
-}
-
-/* Responsivesness */
-
-/* Mobile */
-@media (max-width: 768px) {
-
-}
-
-/* Small mobile */
-@media (max-width: 480px) {
-
 }
