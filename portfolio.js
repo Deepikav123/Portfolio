@@ -1,3 +1,9 @@
 document.querySelector('.hamburgerButton').addEventListener('click',()=>{
-    console.log("Hello");
+    document.querySelector('.rightNavbar').classList.add('active');
+   
+})
+
+document.querySelector('.closeButton').addEventListener('click',()=>{
+    document.querySelector('.rightNavbar').classList.remove('active');
+
 })
