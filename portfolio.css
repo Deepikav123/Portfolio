@@ -310,7 +310,7 @@ body {
 .projectCards {
     margin: 40px 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .projectCard {
